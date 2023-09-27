@@ -1,4 +1,7 @@
 .bg-color-orange{background-color: orangered;}
+.bg-color-red{background-color: red;}
+.bg-color-green{background-color: green;}
+.bg-color-white{background-color: white;}
 
 .white{color: white;}
 
@@ -55,9 +58,10 @@ main{
 
 .container{
     position: relative;
+    min-height: fit-content;
 }
 
-.container img{
+.main-img{
     position:absolute;
     top:0px;
     left:0px;
@@ -65,4 +69,61 @@ main{
 
 .container:hover .main-img{
     z-index: -1;
+}
+
+.marca{
+    font-weight: 300;
+    font-family: 'Neuton', serif;
+}
+
+.modello{
+    font-family: 'Neuton', serif;
+    font-weight: 700;
+}
+
+.prezzo-scontato{
+    color: red;
+    font-family: 'Neuton', serif;
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+.prezzo{
+    text-decoration: line-through;
+    font-family: 'Neuton', serif;
+    font-size:10pt;
+}
+
+.info{
+    z-index:2;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    top: 80%;
+    left:0;
+    min-width: fit-content;
+}
+
+.sostenibilita:after{
+    content: "Sostenibilità";
+    font-family: 'Neuton', serif;
+    font-weight: 700;
+    font-size: 10pt;
+    padding: 2px 5px;
+}
+
+.sconto{
+    font-family: 'Neuton', serif;
+    font-weight: 700;
+    font-size:10pt;
+    padding: 2px 5px;
+    margin-right:2px;
+}
+
+.cuore{
+    z-index:2;
+    position: absolute;
+    top: 5%;
+    left: calc(100% - 26px);
+    padding: 5px;
 }
